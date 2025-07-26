@@ -42,22 +42,23 @@ php -S localhost:8000 -t public
 
 ## 📊 Diagrama do projeto
 
-[Usuário]
-   |
-   v
-/Login -----> [Autenticação]
-   |
-   v
-/Dashboard
-   |
-   |-- Admin:
-   |     |- Criar/editar/excluir ingressos
-   |
-   |-- Cliente:
-         |- Visualizar ingressos disponíveis
-         |- Reservar
-         |- Confirmar compra
-         |- Visualizar seus ingressos comprados
+```mermaid
+graph TD
+    A[Usuário] --> B[/Login/]
+    B --> C[Autenticação]
+    C --> D[/Dashboard/]
+
+    D --> E[Admin]
+    E --> E1[Criar ingressos]
+    E --> E2[Editar ingressos]
+    E --> E3[Excluir ingressos]
+
+    D --> F[Cliente]
+    F --> F1[Visualizar ingressos disponíveis]
+    F --> F2[Reservar ingressos]
+    F --> F3[Confirmar compra]
+    F --> F4[Visualizar ingressos comprados]
+```
 
 ## ✅ Funcionalidades implementadas
 
