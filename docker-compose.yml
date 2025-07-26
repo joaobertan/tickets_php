@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: bitnami/postgresql:16
+    container_name: dev_postgres
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRESQL_USERNAME=devuser
+      - POSTGRESQL_PASSWORD=devpass
+      - POSTGRESQL_DATABASE=dev_evolution
+    volumes:
+      - postgres_data:/bitnami/postgresql
+
+volumes:
+  postgres_data:
