@@ -63,22 +63,22 @@ php -S localhost:8000 -t public
 
 # Autenticação
 
-[x] Login
-[x] Cadastro de Usuários
-[x] Controle de Rotas privadas por Nível de Usuário (admin | client)
-[x] Logout
+- [x] Login
+- [x] Cadastro de Usuários
+- [x] Controle de Rotas privadas por Nível de Usuário (admin | client)
+- [x] Logout
 
 # Tickets
 
-[x] Criação, edição e exclusão de tickets (admin)
-[x] Visualização de tickets disponíveis (client)
-[x] Controle de estoque
+- [x] Criação, edição e exclusão de tickets (admin)
+- [x] Visualização de tickets disponíveis (client)
+- [x] Controle de estoque
 
 # Compras
 
-[x] Reserva temporária ao acessar ingresso
-[x] Remoção da reserva ao sair da página do ticket
-[x] Confirmar compra (client)
-[x] Redução do estoque real ao finalizar compra
+- [x] Reserva temporária ao acessar ingresso
+- [x] Remoção da reserva ao sair da página do ticket
+- [x] Confirmar compra (client)
+- [x] Redução do estoque real ao finalizar compra
 
 
